@@ -1,14 +1,14 @@
 {
-  "main.js": "/static/js/main.61da5e10.chunk.js",
-  "main.js.map": "/static/js/main.61da5e10.chunk.js.map",
-  "static/css/1.b06f1000.chunk.css": "/static/css/1.b06f1000.chunk.css",
-  "static/js/1.a8bea7af.chunk.js": "/static/js/1.a8bea7af.chunk.js",
-  "static/js/1.a8bea7af.chunk.js.map": "/static/js/1.a8bea7af.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/media/index.css": "/static/media/roboto-latin-900.8c2ade50.woff",
-  "static/css/1.b06f1000.chunk.css.map": "/static/css/1.b06f1000.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.89e864cadabc138a200f08508721cc1f.js": "/precache-manifest.89e864cadabc138a200f08508721cc1f.js",
-  "service-worker.js": "/service-worker.js"
+  "main.js": "/chipchik-calendar/static/js/main.61da5e10.chunk.js",
+  "main.js.map": "/chipchik-calendar/static/js/main.61da5e10.chunk.js.map",
+  "static/css/1.f86aa641.chunk.css": "/chipchik-calendar/static/css/1.f86aa641.chunk.css",
+  "static/js/1.e6410242.chunk.js": "/chipchik-calendar/static/js/1.e6410242.chunk.js",
+  "static/js/1.e6410242.chunk.js.map": "/chipchik-calendar/static/js/1.e6410242.chunk.js.map",
+  "runtime~main.js": "/chipchik-calendar/static/js/runtime~main.4df94c97.js",
+  "runtime~main.js.map": "/chipchik-calendar/static/js/runtime~main.4df94c97.js.map",
+  "static/media/index.css": "/chipchik-calendar/static/media/roboto-latin-900italic.7b770d6c.woff2",
+  "static/css/1.f86aa641.chunk.css.map": "/chipchik-calendar/static/css/1.f86aa641.chunk.css.map",
+  "index.html": "/chipchik-calendar/index.html",
+  "precache-manifest.828712bd5a7af091b4b3802c8702e333.js": "/chipchik-calendar/precache-manifest.828712bd5a7af091b4b3802c8702e333.js",
+  "service-worker.js": "/chipchik-calendar/service-worker.js"
 }
