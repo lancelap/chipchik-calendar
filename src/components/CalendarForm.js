@@ -28,27 +28,29 @@ const styles = theme => ({
 
 class CalendarForm extends Component {
   getOutlook = values => () => {
-    const { title, descEvent, timezone, dateStart, dateEnd } = values;
+    const { title, descEvent, timezone, dateStart, dateEnd, location } = values;
     const calendar = new Calendar(
       title,
       descEvent,
       timezone,
       this.props.localTimezoneOffset,
       dateStart,
-      dateEnd
+      dateEnd,
+      location
     );
     return calendar.outlookFile;
   };
 
   onSubmit = values => {
-    const { title, descEvent, timezone, dateStart, dateEnd } = values;
+    const { title, descEvent, timezone, dateStart, dateEnd, location } = values;
     const calendar = new Calendar(
       title,
       descEvent,
       timezone,
       this.props.localTimezoneOffset,
       dateStart,
-      dateEnd
+      dateEnd,
+      location
     );
     window.open(calendar.googleCalendarLink);
   };

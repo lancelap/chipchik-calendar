@@ -7,12 +7,14 @@ class Calendar {
     timezone = 0,
     localTimezoneOffset,
     dateStart,
-    dateEnd
+    dateEnd,
+    location
   ) {
     this._timezone = timezone;
     this._formatDate = "yyyyMMdd'T'HHmmss"; // eslint-disable-line
     this._description = description;
     this._title = title;
+    this._location = location;
 
     if (isValid(dateStart) && isValid(dateEnd)) {
       const offset = timezone - localTimezoneOffset;
@@ -32,7 +34,9 @@ class Calendar {
       this._endDate +
       '&text=' +
       this._title +
-      '&location=&details=' +
+      '&location=' +
+      this._location +
+      '&details=' +
       this._description;
 
     return link;
