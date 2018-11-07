@@ -1,17 +1,23 @@
-import { format, isValid } from 'date-fns';
+import { format, isValid, addMinutes } from 'date-fns';
 
 class Calendar {
-  constructor(title = 'New Event', description = '', timezone = '+00:00') {
+  constructor(
+    title = 'New Event',
+    description = '',
+    timezone = 0,
+    localTimezoneOffset,
+    dateStart,
+    dateEnd
+  ) {
     this._timezone = timezone;
     this._formatDate = "yyyyMMdd'T'HHmmss"; // eslint-disable-line
     this._description = description;
     this._title = title;
-  }
 
-  setDate(start, end) {
-    if (isValid(start) && isValid(end)) {
-      this._startDate = format(start, this._formatDate);
-      this._endDate = format(end, this._formatDate);
+    if (isValid(dateStart) && isValid(dateEnd)) {
+      const offset = timezone - localTimezoneOffset;
+      this._startDate = format(addMinutes(dateStart, offset), this._formatDate);
+      this._endDate = format(addMinutes(dateEnd, offset), this._formatDate);
     } else {
       throw new Error('Invalide time');
     }

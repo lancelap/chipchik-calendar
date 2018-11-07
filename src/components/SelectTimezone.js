@@ -6,382 +6,158 @@ import FormControl from '@material-ui/core/FormControl';
 
 const timezones = [
   {
-    offset: 'GMT-12:00',
-    name: 'Etc/GMT-12',
+    offset: 'GMT -12:00',
+    value: -720,
   },
   {
-    offset: 'GMT-11:00',
-    name: 'Etc/GMT-11',
+    offset: 'GMT -11:00',
+    value: -660,
   },
   {
-    offset: 'GMT-11:00',
-    name: 'Pacific/Midway',
+    offset: 'GMT -10:00',
+    value: -600,
   },
   {
-    offset: 'GMT-10:00',
-    name: 'America/Adak',
+    offset: 'GMT -09:00',
+    value: -540,
   },
   {
-    offset: 'GMT-09:00',
-    name: 'America/Anchorage',
+    offset: 'GMT -08:00',
+    value: -480,
   },
   {
-    offset: 'GMT-09:00',
-    name: 'Pacific/Gambier',
+    offset: 'GMT -07:00',
+    value: -420,
   },
   {
-    offset: 'GMT-08:00',
-    name: 'America/Dawson_Creek',
+    offset: 'GMT -06:00',
+    value: -360,
   },
   {
-    offset: 'GMT-08:00',
-    name: 'America/Ensenada',
+    offset: 'GMT -05:00',
+    value: -300,
   },
   {
-    offset: 'GMT-08:00',
-    name: 'America/Los_Angeles',
+    offset: 'GMT -04:30',
+    value: -270,
   },
   {
-    offset: 'GMT-07:00',
-    name: 'America/Chihuahua',
+    offset: 'GMT -04:00',
+    value: -240,
   },
   {
-    offset: 'GMT-07:00',
-    name: 'America/Denver',
+    offset: 'GMT -03:30',
+    value: -210,
   },
   {
-    offset: 'GMT-06:00',
-    name: 'America/Belize',
+    offset: 'GMT -03:00',
+    value: -180,
   },
   {
-    offset: 'GMT-06:00',
-    name: 'America/Cancun',
+    offset: 'GMT -02:00',
+    value: -120,
   },
   {
-    offset: 'GMT-06:00',
-    name: 'America/Chicago',
+    offset: 'GMT -01:00',
+    value: -60,
   },
   {
-    offset: 'GMT-06:00',
-    name: 'Chile/EasterIsland',
+    offset: 'GMT 00:00',
+    value: 0,
   },
   {
-    offset: 'GMT-05:00',
-    name: 'America/Bogota',
+    offset: 'GMT +01:00',
+    value: 60,
   },
   {
-    offset: 'GMT-05:00',
-    name: 'America/Havana',
+    offset: 'GMT +02:00',
+    value: 120,
   },
   {
-    offset: 'GMT-05:00',
-    name: 'America/New_York',
+    offset: 'GMT +03:00',
+    value: 180,
   },
   {
-    offset: 'GMT-04:30',
-    name: 'America/Caracas',
+    offset: 'GMT +03:30',
+    value: 210,
   },
   {
-    offset: 'GMT-04:00',
-    name: 'America/Campo_Grande',
+    offset: 'GMT +04:00',
+    value: 240,
   },
   {
-    offset: 'GMT-04:00',
-    name: 'America/Glace_Bay',
+    offset: 'GMT +04:30',
+    value: 270,
   },
   {
-    offset: 'GMT-04:00',
-    name: 'America/Goose_Bay',
+    offset: 'GMT +05:00',
+    value: 300,
   },
   {
-    offset: 'GMT-04:00',
-    name: 'America/Santiago',
+    offset: 'GMT +05:30',
+    value: 330,
   },
   {
-    offset: 'GMT-04:00',
-    name: 'America/La_Paz',
+    offset: 'GMT +05:45',
+    value: 345,
   },
   {
-    offset: 'GMT-03:00',
-    name: 'America/Argentina/Buenos_Aires',
+    offset: 'GMT +06:00',
+    value: 360,
   },
   {
-    offset: 'GMT-03:00',
-    name: 'America/Montevideo',
+    offset: 'GMT +06:30',
+    value: 390,
   },
   {
-    offset: 'GMT-03:00',
-    name: 'America/Araguaina',
+    offset: 'GMT +07:00',
+    value: 420,
   },
   {
-    offset: 'GMT-03:00',
-    name: 'America/Godthab',
+    offset: 'GMT +08:00',
+    value: 480,
   },
   {
-    offset: 'GMT-03:00',
-    name: 'America/Miquelon',
+    offset: 'GMT +08:45',
+    value: 525,
   },
   {
-    offset: 'GMT-03:00',
-    name: 'America/Sao_Paulo',
+    offset: 'GMT +09:00',
+    value: 550,
   },
   {
-    offset: 'GMT-03:30',
-    name: 'America/St_Johns',
+    offset: 'GMT +09:30',
+    value: 570,
   },
   {
-    offset: 'GMT-02:00',
-    name: 'America/Noronha',
+    offset: 'GMT +10:00',
+    value: 600,
   },
   {
-    offset: 'GMT-01:00',
-    name: 'Atlantic/Cape_Verde',
+    offset: 'GMT +11:00',
+    value: 660,
   },
   {
-    offset: 'GMT+00:00',
-    name: 'Europe/Belfast',
+    offset: 'GMT +11:30',
+    value: 690,
   },
   {
-    offset: 'GMT+00:00',
-    name: 'Africa/Abidjan',
+    offset: 'GMT +12:00',
+    value: 720,
   },
   {
-    offset: 'GMT+00:00',
-    name: 'Europe/Dublin',
+    offset: 'GMT +13:00',
+    value: 780,
   },
   {
-    offset: 'GMT+00:00',
-    name: 'Europe/Lisbon',
-  },
-  {
-    offset: 'GMT+00:00',
-    name: 'Europe/London',
-  },
-  {
-    offset: 'UTC+00:00',
-    name: 'UTC',
-  },
-  {
-    offset: 'GMT+01:00',
-    name: 'Africa/Algiers',
-  },
-  {
-    offset: 'GMT+01:00',
-    name: 'Africa/Windhoek',
-  },
-  {
-    offset: 'GMT+01:00',
-    name: 'Atlantic/Azores',
-  },
-  {
-    offset: 'GMT+01:00',
-    name: 'Atlantic/Stanley',
-  },
-  {
-    offset: 'GMT+01:00',
-    name: 'Europe/Amsterdam',
-  },
-  {
-    offset: 'GMT+01:00',
-    name: 'Europe/Belgrade',
-  },
-  {
-    offset: 'GMT+01:00',
-    name: 'Europe/Brussels',
-  },
-  {
-    offset: 'GMT+02:00',
-    name: 'Africa/Cairo',
-  },
-  {
-    offset: 'GMT+02:00',
-    name: 'Africa/Blantyre',
-  },
-  {
-    offset: 'GMT+02:00',
-    name: 'Asia/Beirut',
-  },
-  {
-    offset: 'GMT+02:00',
-    name: 'Asia/Damascus',
-  },
-  {
-    offset: 'GMT+02:00',
-    name: 'Asia/Gaza',
-  },
-  {
-    offset: 'GMT+02:00',
-    name: 'Asia/Jerusalem',
-  },
-  {
-    offset: 'GMT+03:00',
-    name: 'Africa/Addis_Ababa',
-  },
-  {
-    offset: 'GMT+03:00',
-    name: 'Asia/Riyadh89',
-  },
-  {
-    offset: 'GMT+03:00',
-    name: 'Europe/Minsk',
-  },
-  {
-    offset: 'GMT+03:30',
-    name: 'Asia/Tehran',
-  },
-  {
-    offset: 'GMT+04:00',
-    name: 'Asia/Dubai',
-  },
-  {
-    offset: 'GMT+04:00',
-    name: 'Asia/Yerevan',
-  },
-  {
-    offset: 'GMT+04:00',
-    name: 'Europe/Moscow',
-  },
-  {
-    offset: 'GMT+04:30',
-    name: 'Asia/Kabul',
-  },
-  {
-    offset: 'GMT+05:00',
-    name: 'Asia/Tashkent',
-  },
-  {
-    offset: 'GMT+05:30',
-    name: 'Asia/Kolkata',
-  },
-  {
-    offset: 'GMT+05:45',
-    name: 'Asia/Katmandu',
-  },
-  {
-    offset: 'GMT+06:00',
-    name: 'Asia/Dhaka',
-  },
-  {
-    offset: 'GMT+06:00',
-    name: 'Asia/Yekaterinburg',
-  },
-  {
-    offset: 'GMT+06:30',
-    name: 'Asia/Rangoon',
-  },
-  {
-    offset: 'GMT+07:00',
-    name: 'Asia/Bangkok',
-  },
-  {
-    offset: 'GMT+07:00',
-    name: 'Asia/Novosibirsk',
-  },
-  {
-    offset: 'GMT+08:00',
-    name: 'Etc/GMT+8',
-  },
-  {
-    offset: 'GMT+08:00',
-    name: 'Asia/Hong_Kong',
-  },
-  {
-    offset: 'GMT+08:00',
-    name: 'Asia/Krasnoyarsk',
-  },
-  {
-    offset: 'GMT+08:00',
-    name: 'Australia/Perth',
-  },
-  {
-    offset: 'GMT+08:45',
-    name: 'Australia/Eucla',
-  },
-  {
-    offset: 'GMT+09:00',
-    name: 'Asia/Irkutsk',
-  },
-  {
-    offset: 'GMT+09:00',
-    name: 'Asia/Seoul',
-  },
-  {
-    offset: 'GMT+09:00',
-    name: 'Asia/Tokyo',
-  },
-  {
-    offset: 'GMT+09:30',
-    name: 'Australia/Adelaide',
-  },
-  {
-    offset: 'GMT+09:30',
-    name: 'Australia/Darwin',
-  },
-  {
-    offset: 'GMT+09:30',
-    name: 'Pacific/Marquesas',
-  },
-  {
-    offset: 'GMT+10:00',
-    name: 'Etc/GMT+10',
-  },
-  {
-    offset: 'GMT+10:00',
-    name: 'Australia/Brisbane',
-  },
-  {
-    offset: 'GMT+10:00',
-    name: 'Australia/Hobart',
-  },
-  {
-    offset: 'GMT+10:00',
-    name: 'Asia/Yakutsk',
-  },
-  {
-    offset: 'GMT+10:30',
-    name: 'Australia/Lord_Howe',
-  },
-  {
-    offset: 'GMT+11:00',
-    name: 'Asia/Vladivostok',
-  },
-  {
-    offset: 'GMT+11:30',
-    name: 'Pacific/Norfolk',
-  },
-  {
-    offset: 'GMT+12:00',
-    name: 'Etc/GMT+12',
-  },
-  {
-    offset: 'GMT+12:00',
-    name: 'Asia/Anadyr',
-  },
-  {
-    offset: 'GMT+12:00',
-    name: 'Asia/Magadan',
-  },
-  {
-    offset: 'GMT+12:00',
-    name: 'Pacific/Auckland',
-  },
-  {
-    offset: 'GMT+12:45',
-    name: 'Pacific/Chatham',
-  },
-  {
-    offset: 'GMT+13:00',
-    name: 'Pacific/Tongatapu',
-  },
-  {
-    offset: 'GMT+14:00',
-    name: 'Pacific/Kiritimati',
+    offset: 'GMT +14:00',
+    value: 840,
   },
 ];
 
 const items = timezones.map(zone => (
-  <option key={zone.name} value={zone.offset.slice(3)}>
-    ({zone.offset}) {zone.name}
+  <option key={zone.value} value={zone.value}>
+    {zone.offset}
   </option>
 ));
 
@@ -390,10 +166,11 @@ export default ({
   meta,
   label,
   defaultValue,
+  fullWidth,
   ...rest
 }) => {
   return (
-    <FormControl fullWidth>
+    <FormControl fullWidth={fullWidth} margin="normal">
       <InputLabel shrink htmlFor={name}>
         {label}
       </InputLabel>
@@ -401,10 +178,10 @@ export default ({
         {...rest}
         name={name}
         onChange={onChange}
-        value={value}
+        defaultValue={defaultValue}
         input={<Input {...restInput} />}
       >
-        <option value={defaultValue}>Стандартное время</option>
+        <option value="" />
         {items}
       </NativeSelect>
     </FormControl>

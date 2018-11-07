@@ -11,7 +11,6 @@ export default ({
     <DateTimePicker
       {...rest}
       name={name}
-      helperText={meta.touched ? meta.error : undefined}
       error={meta.error && meta.touched}
       InputProps={restInput}
       onChange={onChange}
