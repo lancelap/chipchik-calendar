@@ -62,7 +62,8 @@ class App extends Component {
                 }}
               >
                 <MenuItem value={'en'}>English</MenuItem>
-                <MenuItem value={'ru'}>Russian</MenuItem>
+                <MenuItem value={'ru'}>Русский</MenuItem>
+                <MenuItem value={'ua'}>Український</MenuItem>
               </Select>
             </Toolbar>
           </AppBar>
