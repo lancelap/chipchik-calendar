@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/chipchik-calendar/precache-manifest.1ae70f263613e52cc541926402f83bb0.js"
+  "/chipchik-calendar/precache-manifest.6c2c66d284add8a72a33b2ea453697b8.js"
 );
 
 workbox.clientsClaim();
