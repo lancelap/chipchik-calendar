@@ -9,6 +9,7 @@ import SelectTimezone from './SelectTimezone';
 import Calendar from './../utils/calendar';
 import SimpleModal from './SimpleModal';
 import langLib from '.././utils/langLib';
+import downloadPst from '.././utils/downloadPst';
 
 const styles = theme => ({
   textField: {
@@ -38,7 +39,7 @@ class CalendarForm extends Component {
       dateEnd,
       location
     );
-    return calendar.outlookFile;
+    downloadPst(calendar.outlookFile);
   };
 
   onSubmit = values => {
