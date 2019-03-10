@@ -7,7 +7,6 @@ import TextField from './TextField';
 import DateTimePicker from './DateTimePicker';
 import SelectTimezone from './SelectTimezone';
 import Calendar from './../utils/calendar';
-import SimpleModal from './SimpleModal';
 import langLib from '.././utils/langLib';
 import downloadPst from './../utils/downloadPst';
 

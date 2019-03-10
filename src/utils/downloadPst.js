@@ -1,12 +1,12 @@
 export default function download(text) {
-    var element = document.createElement('a');
-    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
-    element.setAttribute('download', 'chipchik-calendar.pst');
+  var element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+  element.setAttribute('download', 'chipchik-calendar.pst');
 
-    element.style.display = 'none';
-    document.body.appendChild(element);
+  element.style.display = 'none';
+  document.body.appendChild(element);
 
-    element.click();
+  element.click();
 
-    document.body.removeChild(element);
+  document.body.removeChild(element);
 }
