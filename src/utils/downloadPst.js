@@ -1,4 +1,4 @@
-function download(text) {
+export default function download(text) {
     var element = document.createElement('a');
     element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
     element.setAttribute('download', 'chipchik-calendar.pst');

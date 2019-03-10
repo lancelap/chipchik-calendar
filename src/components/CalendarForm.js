@@ -9,7 +9,7 @@ import SelectTimezone from './SelectTimezone';
 import Calendar from './../utils/calendar';
 import SimpleModal from './SimpleModal';
 import langLib from '.././utils/langLib';
-import downloadPst from '.././utils/downloadPst';
+import downloadPst from './../utils/downloadPst';
 
 const styles = theme => ({
   textField: {
@@ -181,11 +181,11 @@ class CalendarForm extends Component {
                   </Grid>
 
                   <Grid item>
-                    <SimpleModal
-                      disabled={submitting || pristine}
-                      getOutlook={this.getOutlook(values)}
-                      open
-                    />
+                    <Button 
+                      disabled={submitting}
+                      onClick={this.getOutlook(values)}>
+                      getOutlook
+                    </Button>
                   </Grid>
                 </Grid>
               </Grid>
