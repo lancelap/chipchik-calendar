@@ -1,14 +1,14 @@
 {
-  "main.js": "/chipchik-calendar/static/js/main.cfd49095.chunk.js",
-  "main.js.map": "/chipchik-calendar/static/js/main.cfd49095.chunk.js.map",
-  "static/css/1.82aedfa8.chunk.css": "/chipchik-calendar/static/css/1.82aedfa8.chunk.css",
-  "static/js/1.25e7a468.chunk.js": "/chipchik-calendar/static/js/1.25e7a468.chunk.js",
-  "static/js/1.25e7a468.chunk.js.map": "/chipchik-calendar/static/js/1.25e7a468.chunk.js.map",
+  "main.js": "/chipchik-calendar/static/js/main.abcdfec2.chunk.js",
+  "main.js.map": "/chipchik-calendar/static/js/main.abcdfec2.chunk.js.map",
+  "static/css/1.3ffff04a.chunk.css": "/chipchik-calendar/static/css/1.3ffff04a.chunk.css",
+  "static/js/1.671137ac.chunk.js": "/chipchik-calendar/static/js/1.671137ac.chunk.js",
+  "static/js/1.671137ac.chunk.js.map": "/chipchik-calendar/static/js/1.671137ac.chunk.js.map",
   "runtime~main.js": "/chipchik-calendar/static/js/runtime~main.4df94c97.js",
   "runtime~main.js.map": "/chipchik-calendar/static/js/runtime~main.4df94c97.js.map",
-  "static/media/index.css": "/chipchik-calendar/static/media/roboto-latin-900italic.bc833e72.woff",
-  "static/css/1.82aedfa8.chunk.css.map": "/chipchik-calendar/static/css/1.82aedfa8.chunk.css.map",
+  "static/media/index.css": "/chipchik-calendar/static/media/roboto-latin-900.8c2ade50.woff",
+  "static/css/1.3ffff04a.chunk.css.map": "/chipchik-calendar/static/css/1.3ffff04a.chunk.css.map",
   "index.html": "/chipchik-calendar/index.html",
-  "precache-manifest.012c38c75d2889ddfd71275573778bf4.js": "/chipchik-calendar/precache-manifest.012c38c75d2889ddfd71275573778bf4.js",
+  "precache-manifest.ec66495a7078af4d03b6c11bed16abde.js": "/chipchik-calendar/precache-manifest.ec66495a7078af4d03b6c11bed16abde.js",
   "service-worker.js": "/chipchik-calendar/service-worker.js"
 }
